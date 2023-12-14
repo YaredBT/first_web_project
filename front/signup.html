@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>Hospital hub</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top bg-light">
+      <div class="container-fluid navbar-expand-lg px-sm-5 shadow-lg py-1">
+        <div class="logo">
+          <a href="index.html">
+            <img class="img-fluid" src="favicon.ico" alt="Log of the Website" />
+          </a>
+        </div>
+        <a href="index.html" class="navbar-brand">Hospital Hub</a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse row navbar-collapse justify-content-between"
+          id="main-nav"
+        >
+          <div class="col-6">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="private.html" class="nav-link">private hospital</a>
+              </li>
+              <li class="nav-item">
+                <a href="public.html" class="nav-link">public hospital</a>
+              </li>
+              <li class="nav-item">
+                <a href="labratory.html" class="nav-link">Laboratory</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              
+              <li id="login" class="nav-item ">
+                <button onclick="logIn()" id="btn_login" class="nav-link btn btn-primary">Login</button>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+
+    <section class="my-5">
+      <div class="row justify-content-center">
+        <div class="col-sm-8 col-md-6 p-5 shadow-lg">
+          <h1 class="text-center">Sign Up</h1>
+
+          <form id="signup_form" action="" class="needs-validation" novalidate>
+            <label for="fullname" class="form-label pt-4">Full Name</label>
+            <input type="text" class="form-control" id="fullname" required />
+            <label for="email" class="form-label pt-4">Email</label>
+            <input type="email" class="form-control" id="email" required />
+            <label for="username" class="form-label pt-4">Username</label>
+            <input type="text" class="form-control" id="username" required />
+            <label for="password" class="form-label pt-4">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              required
+            />
+            <label for="password2" class="form-label pt-4"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="password2"
+              required
+            />
+
+            
+          </form>
+          <button onclick="signup_handler()" class="btn shadow-lg px-5 d-block mt-5 btn-outline-secondary">
+            create account
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- *************** footer  ***************** -->
+    <footer class="mt-5 px-3 shadow-lg pt-3 text-center">
+      <div class="container-fluidpt-5">
+        <div class="row row-gap-3 justify-content-center">
+          <div class="col-md-2 text-md-center">
+            <h3 class="fw-bold h3">Address</h3>
+            <p>Ethiopia, Addis Ababa</p>
+            <p>+251910111232</p>
+            <p>Support.@gmail.com</p>
+          </div>
+          <div class="col-md-5 text-md-center">
+            <h3 class="fw-bold h3">Services</h3>
+            <p>
+              <a href="public.html" class="text-decoration-none"
+                >Public Hospital</a
+              >
+            </p>
+            <p>
+              <a href="private.html" class="text-decoration-none"
+                >Private Hospital</a
+              >
+            </p>
+            <p>
+              <a href="labratory.html" class="text-decoration-none"
+                >Labratory</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 text-md-center">
+            <h3 class="fw-bold h3">About the Website</h3>
+            <p>
+              This website is aimed to provide information about different
+              Hospitals in Addis Ababa.
+            </p>
+            <p>
+              <a href="about.html" class="text-decoration-none">Read more</a>
+            </p>
+            <p class="fw-bold">Follow Us</p>
+          </div>
+        </div>
+        <div class="text-center container-xxl pb-1">
+          <hr class="border border-dark" />
+          <p>&copy; copyright 2023 All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- ******************** javascript ********************* -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/auth.js"></script>
+  </body>
+</html>

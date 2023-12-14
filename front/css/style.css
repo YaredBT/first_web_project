@@ -1,0 +1,16 @@
+#btn-login{
+    display: block;
+}
+#btn-logout {
+    display: none;
+}
+
+#hide{
+    display: none;
+}
+#display{
+    display: block;
+}
+.hidden_id {
+    display: none;
+}
